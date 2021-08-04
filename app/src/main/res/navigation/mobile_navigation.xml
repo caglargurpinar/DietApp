@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.dene.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/nav_bmi"
+        android:name="com.example.dene.ui.bmi.bmi"
+        android:label="@string/menu_bmi"
+        tools:layout="@layout/bmi_fragment" />
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.dene.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_dietlist"
+        android:name="com.example.dene.ui.dietlist.DietlistFragment"
+        android:label="@string/menu_dietlist"
+        tools:layout="@layout/fragment_dietlist" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.dene.ui.Profile.ProfileFragment"
+        android:label="profile"
+        tools:layout="@layout/profile_fragment" />
+</navigation>
